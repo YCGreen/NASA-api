@@ -6,7 +6,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface MarsService {
-    @GET("rovers/curiosity/photos")
+    @GET("api/v1/rovers/curiosity/photos")
     Single<MarsResponse> getPhotos(
             @Query("earth_date") String earthDate
     );

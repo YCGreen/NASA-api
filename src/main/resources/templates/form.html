@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mars Photo</title>
+</head>
+<body>
+<h1>Mars Rover Photo</h1>
+<div>
+    <p th:if="${imageUrl == null}">No photo available for the given date.</p>
+    <img th:if="${imageUrl != null}" th:src="${imageUrl}" alt="Mars Rover Photo">
+</div>
+</body>
+</html>

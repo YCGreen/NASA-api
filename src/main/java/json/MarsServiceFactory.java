@@ -13,7 +13,7 @@ public class MarsServiceFactory {
                 .create();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://mars-photo-api.herokuapp.com/")
+                .baseUrl("https://mars-photos.herokuapp.com/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .build();

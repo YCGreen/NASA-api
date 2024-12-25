@@ -7,11 +7,15 @@ public class Photo {
     private int id;
     private int sol;
     private Camera camera;
-    private URL img_src;
+    private String img_src;
     private Date earth_date;
     private Rover rover;
 
     public int getId() {
         return id;
+    }
+
+    public String getImgSrc() {
+        return img_src;
     }
 }
